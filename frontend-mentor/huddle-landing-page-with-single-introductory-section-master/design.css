@@ -4,10 +4,22 @@
 }
 
 body {
+  background-color: hsl(257, 40%, 49%);
+  font-family: "Open Sans", sans-serif;
+}
+
+.page-wrapper {
   background-image: url("images/bg-mobile.svg");
   background-repeat: no-repeat;
-  background-color: hsl(257, 40%, 49%);
   padding: 2.3rem 10%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
 }
 
 img#logo {
@@ -28,7 +40,35 @@ img#illustration {
 }
 
 @media screen and (min-width: 376px) {
-  body {
-    background: no-repeat url("images/bg-desktop.svg");
+  .page-wrapper {
+    background-image: url("images/bg-desktop.svg");
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .page-wrapper {
+    flex-direction: row;
+  }
+
+  header {
+    width: 60%;
+  }
+
+  main {
+    padding-left: 10%;
+    align-self: center;
+    width: 40%;
+  }
+
+  /* img#logo,
+  img#illustration {
+    width: auto;
+  } */
+}
+
+@media screen and (min-width: 1440px) {
+  .page-wrapper {
+    width: 1440px;
+    margin: 0 auto;
   }
 }
