@@ -2,3 +2,40 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+body {
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  padding: 2.3rem;
+}
+
+header {
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: space-between;
+  height: 19.5rem; */
+}
+
+img#logo {
+  width: 40%;
+  margin-bottom: 18%;
+}
+
+img#illustration {
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background: no-repeat url("images/bg-desktop.svg");
+  }
+}
