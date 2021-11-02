@@ -6,9 +6,11 @@
 body {
   background-color: hsl(257, 40%, 49%);
   font-family: "Open Sans", sans-serif;
+  color: #fff;
 }
 
 .page-wrapper {
+  max-width: 1440px;
   background-image: url("images/bg-mobile.svg");
   background-repeat: no-repeat;
   padding: 2.3rem 10%;
@@ -17,13 +19,25 @@ body {
   flex-direction: column;
 }
 
+main {
+  text-align: center;
+}
+
+.main__linkbar {
+  text-align: center;
+}
+
+.main__linkbar img {
+  width: 2rem;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
 }
 
 img#logo {
-  width: 40%;
+  width: min(40%, 200px);
   margin-bottom: 18%;
 }
 
@@ -45,7 +59,7 @@ img#illustration {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .page-wrapper {
     flex-direction: row;
   }
@@ -58,6 +72,11 @@ img#illustration {
     padding-left: 10%;
     align-self: center;
     width: 40%;
+    text-align: left;
+  }
+
+  .main__linkbar {
+    text-align: right;
   }
 
   /* img#logo,
@@ -68,7 +87,7 @@ img#illustration {
 
 @media screen and (min-width: 1440px) {
   .page-wrapper {
-    width: 1440px;
     margin: 0 auto;
+    padding: 2.3rem 144px;
   }
 }
