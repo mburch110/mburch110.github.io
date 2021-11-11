@@ -19,12 +19,36 @@ body {
   flex-direction: column;
 }
 
+header {
+  margin-bottom: 4rem;
+}
+
 main {
   text-align: center;
 }
 
+.main__headline {
+  margin-bottom: 1rem;
+}
+
+.main__registerLink {
+  display: inline-block;
+  font-size: 1rem;
+  color: hsl(257, 40%, 49%);
+  text-decoration: none;
+  background: #fff;
+  margin-top: 1.5rem;
+  padding: 0.75em 5em;
+  border-radius: 40px;
+}
+
+.main__registerLink::after {
+  box-shadow: 2px 2px red;
+}
+
 .main__linkbar {
   text-align: center;
+  margin-top: 4rem;
 }
 
 .main__linkbar img {
@@ -78,11 +102,6 @@ img#illustration {
   .main__linkbar {
     text-align: right;
   }
-
-  /* img#logo,
-  img#illustration {
-    width: auto;
-  } */
 }
 
 @media screen and (min-width: 1440px) {
